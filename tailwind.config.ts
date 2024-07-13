@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'compBg' : '#1E1E1E' ,
-        'success': '#75FC72' 
-        
+        compBg: "#1E1E1E",
+        success: "#75FC72",
+        failure: "#FF4D4D",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
