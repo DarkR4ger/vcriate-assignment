@@ -1,3 +1,5 @@
+import FirstComp from "@/components/firstComp";
+import SecondComp from "@/components/secondComp";
 import Image from "next/image";
 
 export default async function Home() {
@@ -8,8 +10,9 @@ export default async function Home() {
   // console.log(data)
   
   return (
-    <main>
-      <div>hello</div>
+    <main className="min-h-screen p-5 flex flex-col gap-4">
+      <FirstComp />
+      <SecondComp />
     </main>
   );
 }
