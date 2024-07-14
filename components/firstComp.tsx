@@ -34,7 +34,7 @@ const FirstComp = () => {
     getData();
   }, []);
   return (
-    <div className="bg-compBg p-10 max-w-[40%] rounded-md">
+    <div className="bg-compBg p-10 max-w-[750px] rounded-md">
       {!data && <div>Loading...</div>}
       {data &&
         data.components.map((comp, index) => {
@@ -69,7 +69,7 @@ const FirstComp = () => {
 
 const Mitigations = ({ data }: { data: FirstCompMigrationType }) => {
   return (
-    <div className="pb-10 pr-10 w-[50%] border-r border-b  border-r-gray-500/30 border-b-gray-500/30 flex flex-col gap-2">
+    <div className="pb-10 pr-10  w-[50%] border-r border-b  border-r-gray-500/30 border-b-gray-500/30 flex flex-col gap-2">
       <h2 className="opacity-75 text-left font-medium">Finding Mitigation</h2>
       <div className="flex items-center justify-between">
         <div className="flex flex-col justify-center">
@@ -127,7 +127,7 @@ const Behaviour = ({ data }: { data: FirstCompBehaviourType }) => {
 
 const RiskPrevention = ({ data }: { data: FirstCompRiskPreventionType }) => {
   return (
-    <div className="pb-10 pt-10 pr-10 w-[50%] flex flex-col gap-2">
+    <div className="pb-10 pt-10 pr-10 w-[50%] border-r border-r-gray-500/30 flex flex-col gap-2">
       <h2 className="opacity-75 text-left font-medium">Risk Prevention</h2>
       <div className="flex items-center justify-between">
         <div className="flex flex-col justify-center">
@@ -150,7 +150,7 @@ const Efficiency = ({ data }: { data: FirstCompEfficiencyType }) => {
   const unit = data.time_saved.substring(3);
 
   return (
-    <div className="pt-10 pl-10 w-[50%] border-l border-l-gray-500/30 flex flex-col gap-2">
+    <div className="pt-10 pl-10 w-[50%] flex flex-col gap-2">
       <h2 className="opacity-75 text-left font-medium">
         Efficiency &amp; Impact
       </h2>

@@ -132,7 +132,7 @@ const SecondComp = () => {
   }, []);
 
   return (
-    <div className="bg-compBg p-8 rounded-md max-w-[40%] flex flex-col gap-2 justify-center ">
+    <div className="bg-compBg p-8 rounded-md max-w-[750px] flex flex-col gap-2 justify-center ">
       {!data && <div>Loading...</div>}
       {data && (
         <>
