@@ -72,7 +72,7 @@ const SecondComp = () => {
 
   const getData = async () => {
     try {
-      const res = await fetch("/api/secondcomp");
+      const res = await fetch("/api/seconddata");
       const body: SecondCompResponseType = await res.json();
       if (body.success) {
         const data: SecondCompDataType = body.data!;

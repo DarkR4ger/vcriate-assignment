@@ -1,2 +1,2 @@
 
-export const dbUrl = "https://890c10c8-7d73-46a0-a3ab-1d8fcab943a9.mock.pstmn.io"
+export const dbUrl = "https://51a12e04-fc03-4ce1-acf6-518c354b8b5e.mock.pstmn.io"

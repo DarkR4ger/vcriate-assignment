@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
   try {
-    const res = await fetch(`${dbUrl}/firstcomponent`);
+    const res = await fetch(`${dbUrl}/data1`);
     const data = await res.json();
     return NextResponse.json({
       success: true,

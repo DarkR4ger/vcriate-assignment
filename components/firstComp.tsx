@@ -17,7 +17,7 @@ const FirstComp = () => {
 
   const getData = async () => {
     try {
-      const res = await fetch("/api/firstcomp");
+      const res = await fetch("/api/firstdata");
       const body: FirstCompResponseType = await res.json();
       if (body.success) {
         const data: FirstCompDataType = body.data!;
